@@ -44,18 +44,18 @@ int main(void)
         }
         
         printf("[%s]\n", command);
-        if(strcmp(command,"exit") == 0){                                                 /* exit 구현 */
+        if(strcmp(command,"exit") == 0){                                                 /* exit*/
         	break;
         }
  
        
         if(strcmp(command,"pwd")==0){
-	char buf[BUFSIZ];
+	char buf[BUFSIZ];                                                                /* pwd */
 	
 	getcwd(buf,BUFSIZ);
 	printf("%s\n",buf);
         }
-        if(strcmp(command,"mkdir")==0){
+        if(strcmp(command,"mkdir")==0){                                                 /* mkdir */
 	char namef[] ="";
 	printf("만들 폴더 이름을 입렵하시오: ");
 	scanf("%s", namef);
