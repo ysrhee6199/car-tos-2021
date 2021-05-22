@@ -75,7 +75,7 @@ int main(void)
 		perror( "폴더 생성을 실패했습니다.\n" );
 	}
         }
-        if(strcmp(command,"ls")==0){
+        if(strcmp(command,"ls")==0){                                             /* ls */
 	char * cwd = (char *)malloc(sizeof(char) * 1024);
         DIR * dir = NULL;
         struct dirent * entry = NULL;
